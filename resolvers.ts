@@ -44,7 +44,8 @@ export const resolvers = {
             args: {nombreCompleto: string, telefono: string},
             ctx: {contactCollection: Collection<Contact>}
         ) => {
-            const API_KEY = Deno.env.get('API_KEY')
+            //const API_KEY = Deno.env.get('API_KEY')
+            const API_KEY = 'API_KEY=PCEHIjecrZfpLcz0raKVJQ==mCRrSMJBwvsD1wkM'
             if(!API_KEY){ throw new Error('API key missing. . .')}
 
             const url1 = 'https://api.api-ninjas.com/v1/validatephone?number=' + args.telefono

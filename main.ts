@@ -6,7 +6,8 @@ import { ApolloServer } from '@apollo/server'
 import { startStandaloneServer } from '@apollo/server/standalone'
 
 // Connection URL
-const MONGO_URL = Deno.env.get('MONGO_URL')
+//const MONGO_URL = Deno.env.get('MONGO_URL')
+const MONGO_URL = 'mongodb+srv://mikeoc047:hkEu5zBJwMV4aJ56@nebrijacluster.5m2fp.mongodb.net/?retryWrites=true&w=majority&appName=NebrijaCluster'
 if(!MONGO_URL){
   throw new Error('Bad mongo url. . .')
 }
